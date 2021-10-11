@@ -1,45 +1,4 @@
-"""
-Tape
-Cabezal (apuntador,simboloa sobreescribir,izquierda-derecha-izquierda)
-Registro de estados
-Tabla de transiciones
-La maquina de turing tiene las caracteristicas de un Automata finito
 
-Q = Es un conjunto de estados
-    Î£ = Alfabeto conjunto de caracteres (codigo utf-8 ="\u03A3")	
-    Î“ = Simbolos de la cinta
-    s = Estado inicial sÏµQ
-    Î´= Reglas nde transicion (Codigo utf-8 = "\u03B4")
-    QxÎ£->Q Reglas de transicion
-    bÏµÎ“ = es un simbolo denominado blanco, que se puede repetir 
-          infinitamente en toda la cinta 
-    FâŠ†Q Estado finales o de aceptacion
-    
-    Q = {s,q1}
-    Î£ = {a}	
-    Î“ = {a,b}
-    s = Estado inicial q0ÏµQ
-    Î´= Reglas de transicion 
-    Reglas de transicion
-    Q x Î£ -> Q
-    ((q0,a)->q1*)
-    (estado, valor) -> nuevo estado, nuevo valor, direcciÃ³n)
-    (s,a)->q1,b,right
-    (q1,b)->--Valido--
-    "si estamos en el estado s leyendo la posiciÃ³n q1, donde hay 
-    escrito el sÃ­mbolo 'a', entonces este sÃ­mbolo debe ser reemplazado 
-    por el sÃ­mbolo 'b', y pasar a leer la celda siguiente, a la derecha".
-    FâŠ†Q = {q1}
-    
-    Estructura gafica es un grafo dirigido que se conecta en los vertices 
-    con:
-        (lee el cabezal/
-        sÃ­mbolo que escribirÃ¡ el cabezal, 
-        movimiento del cabezal.)
-        (s,a)->q1,b,right
-        ('a',b,right)
-        
-"""
 
 def turing_M (state = None, #estados de la maquina de turing
               blank = None, #simbolo blanco de el alfabeto dela cinta
