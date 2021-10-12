@@ -95,7 +95,7 @@ turing_M (state = 'q0', #estado inicial de la maquina de turing
 """
 
 
-
+"""
 #Cuarta Maquina
 turing_M (state = 'q0', #estado inicial de la maquina de turing
               blank = 'z', #simbolo blanco de el alfabeto dela cinta
@@ -109,5 +109,27 @@ turing_M (state = 'q0', #estado inicial de la maquina de turing
                           "q2 d d right q2".split(),
                           "q2 z z right q3".split(),
                           ]   
+                         )
+             ) 
+"""
+
+
+
+
+#Sumador de Numeros
+turing_M (state = 'q0', #estado inicial de la maquina de turing
+              blank = 'z', #simbolo blanco de el alfabeto dela cinta
+              tape = list("1111+111"),#inserta los elementos en la cinta
+              final = 'q4',  #estado valido y/o final
+              rules = map(tuple,#reglas de transicion
+                          [
+                          "q0 1 1 right q1".split(),
+                          "q1 1 1 right q1".split(),
+                          "q1 + 1 right q2".split(),
+                          "q2 1 1 right q2".split(),
+                          "q2 z z left q3".split(),
+                          "q3 1 z right q4".split(),
+                          ]   
+
                          )
              ) 
