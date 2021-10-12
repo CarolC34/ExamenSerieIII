@@ -99,7 +99,7 @@ turing_M (state = 'q0', #estado inicial de la maquina de turing
 #Cuarta Maquina
 turing_M (state = 'q0', #estado inicial de la maquina de turing
               blank = 'z', #simbolo blanco de el alfabeto dela cinta
-              tape = list("abbbcddd"),#inserta los elementos en la cinta
+              tape = list("abbbcdddd"),#inserta los elementos en la cinta
               final = 'q3',  #estado valido y/o final
               rules = map(tuple,#reglas de transicion
                           [
