@@ -69,7 +69,7 @@ while True:
     if op == 1:
 
         turing_M(state='q0',  # estado inicial de la maquina de turing
-             blank='b',  # simbolo blanco de el alfabeto dela cinta
+             blank='z',  # simbolo blanco de el alfabeto dela cinta
              # inserta los elementos en la cinta
              tape=list(input("Digite la cadena: ")),
              final='q1',  # estado valido y/o final
@@ -77,7 +77,7 @@ while True:
                        [
                            "q0 1 x right q0".split(),
                            "q0 0 0 right q0".split(),
-                           "q0 b b right q1".split(),
+                           "q0 z z right q1".split(),
                        ]
                        )
              )
