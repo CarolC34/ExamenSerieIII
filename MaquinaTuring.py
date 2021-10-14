@@ -58,7 +58,7 @@ while True:
 
     print("Seleccione una opcion")
     print("1. Expresion (10)*")
-    print("2. a*b")
+    print("2. Expresion a*b")
     print("3. Expresion a*bc")
     print("4. Expresion ab*cd*")
     print("5. Calculadora de dos Numero, presione la cantidad de unos + otra cantidad de unos")
