@@ -86,12 +86,12 @@ while True:
 
     elif op == 2:
 
-        turing_M(state='q0',  # estado inicial de la maquina de turing
-             blank='z',  # simbolo blanco de el alfabeto dela cinta
-             # inserta los elementos en la cinta
+        turing_M(state='q0', 
+             blank='z',  
+             
              tape=list(input("Digite la cadena: ")),
-             final='q2',  # estado valido y/o final
-             rules=map(tuple,  # reglas de transicion
+             final='q2',  
+             rules=map(tuple,  
                        [
                            "q0 a 1 right q0".split(),
                            "q0 b 0 right q1".split(),
