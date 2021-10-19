@@ -63,6 +63,7 @@ while True:
     print("4. Expresion ab*cd*")
     print("5. Calculadora de dos Numero, presione la cantidad de unos + otra cantidad de unos")
     print("6. Salir")
+    print("")
 
 
     op = int(input("Seleccione: "))
@@ -92,8 +93,8 @@ while True:
              final='q2', 
              rules=map(tuple,  
                        [
-                           "q0 a 1 right q0".split(),
-                           "q0 b 0 right q1".split(),
+                           "q0 a a right q0".split(),
+                           "q0 b b right q1".split(),
                            "q1 z z right q2".split(),
                        ]
                        )
