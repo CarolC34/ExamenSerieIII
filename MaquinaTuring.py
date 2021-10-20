@@ -53,7 +53,7 @@ Estado	  Simbolo lei­do	    Si­mbolo escrito	     Mov. 	Estado sig.
 
 print("Maquina de turing Test")
 
-
+#menu de opciones
 while True:
 
     print("Seleccione una opcion")
@@ -91,7 +91,7 @@ while True:
              blank='z',  
              tape=list(input("Digite la cadena: ")),
              final='q2', 
-             rules=map(tuple,  
+             rules=map(tuple,  #reglas de trancisiones
                        [
                            "q0 a a right q0".split(),
                            "q0 b b right q1".split(),
