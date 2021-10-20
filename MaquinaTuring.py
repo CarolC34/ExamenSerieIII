@@ -39,12 +39,12 @@ Estado	  Simbolo lei­do	    Si­mbolo escrito	     Mov. 	Estado sig.
         tape[pos] = v1  # rescribe el simbolo de la cinta
 
     # movimiento del cabezal
-        if dr == 'left':
+        if dr == 'left':  #movimiento a izquierda
             if pos > 0:
                 pos -= 1
             else:
                 tape.insert(0, blank)
-        if dr == 'right':
+        if dr == 'right':   #movimiento a derecha
             pos += 1
             if pos >= len(tape):
                 tape.append(blank)
