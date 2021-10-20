@@ -91,7 +91,7 @@ while True:
              blank='z',  
              tape=list(input("Digite la cadena: ")),
              final='q2', 
-             rules=map(tuple,  #reglas de trancisiones
+             rules=map(tuple,  #reglas de transiciones
                        [
                            "q0 a a right q0".split(),
                            "q0 b b right q1".split(),
