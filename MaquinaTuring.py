@@ -62,7 +62,8 @@ while True:
     print("3. Expresion a*bc")
     print("4. Expresion ab*cd*")
     print("5. Calculadora de dos Numero, presione la cantidad de unos + otra cantidad de unos")
-    print("6. Salir")
+    print("6.Expresion 0*1")
+    print("7. Salir")
     print("")
 
 
@@ -155,10 +156,26 @@ while True:
                        )
              )
         print("")     
-
-
+        #Modificacion de examen
     elif op == 6:
-        if op > 5:
+
+        turing_M(state='q0', 
+             blank='z',  
+             tape=list(input("Digite la cadena: ")),
+             final='q2', 
+             rules=map(tuple,  #reglas de la transicion
+                       [
+                           "q0 0 0 right q0".split(),
+                           "q0 1 1 right q1".split(),
+                           "q1 z z right q2".split(),
+                       ]
+                       )
+             )
+        print("")     
+
+
+    elif op == 7:
+        if op > 6:
             break    
 
     else:
